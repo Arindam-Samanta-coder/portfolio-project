@@ -5,11 +5,16 @@
   --primary-blue: #060CF6;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255,0);
+  --primary-red: #ef4035;
 }
 
 
 body {
   font-family: "Roboto Condensed" sans-serif;
+}
+
+nav {
+  z-index: 2;
 }
 
 /*************************NAVBAR*******************/
@@ -45,4 +50,73 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/*****************HEADER*******************/
+
+.header-wrapper {
+  position: relative;
+  background: url(wall-and-laptop-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+  z-index: 1;
+}
+
+.main-info h4 {
+  color: var(--primary-white);
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+}
+
+.paragraph {
+  font-size:1.2rem;
+  color: var(--primary-white);
+}
+
+/**************TypedTExt**************/
+.typed-text {
+  font-size:1.3rem;
+  color: var(--primary-white);
+}
+
+/***********HEADER BUTTON***********/
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white) !important;
+  margin: 2rem;
+  
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-red);
+  transition: .2s ease-in-out;
+
+}
+/************PARTICLES*****************/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+  z-index: 1;
 }
