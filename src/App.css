@@ -6,11 +6,12 @@
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255,0);
   --primary-red: #ef4035;
+  --primary-black: #000;
 }
 
 
 body {
-  font-family: "Roboto Condensed" sans-serif;
+  font-family: "Roboto Condensed" sans-serif !important;
 }
 
 nav {
@@ -104,19 +105,57 @@ nav ul li {
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white) !important;
   margin: 2rem;
-  
+  background-color: var(--primary-red);
 }
 
 .btn-main-offer:hover {
   text-decoration: none;
-  background-color: var(--primary-red);
-  transition: .2s ease-in-out;
-
 }
+
 /************PARTICLES*****************/
 .tsparticles-canvas-el {
   position: absolute;
   height: 10vh;
   width: 10vw;
   z-index: 1;
+}
+
+/******************************ABOUT ME*********************/
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.profile-img {
+  width: 30rem;
+  border-radius: 50%;
+  padding: .2rem;
+  border: 1px solid var(--primary-blue);
+}
+
+.about-heading {
+  color: var(--primary-blue);
+  text-transform: uppercase;
+}
+
+.para {
+  color: var(--primary-black);
+}
+
+@media(max-width: 468px) {
+  .profile-img {
+    width: 20rem;
+  }
+  .about-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
