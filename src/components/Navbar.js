@@ -25,11 +25,11 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">Skills</a>
+                <a className="nav-link" href="#">Academics</a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">Projects</a>
+                <a className="nav-link" href="#">Skills</a>
               </li>
 
               <li className="nav-item">
